@@ -41,6 +41,7 @@ Comprehensive EDA was performed to understand the dataset:
 - **Numeric Feature Distribution**: Histograms of numeric features to analyze value distributions.
 - **Boxplots**: Detected and visualized outliers in numeric features.
 - **Target Variable Distribution**: Pie chart showing the class distribution of labels.
+    ![Target Variable Distribution](./img/labelDistribution.png)
 
 ## Data Preprocessing
 ---
@@ -122,7 +123,10 @@ A neural network was implemented using TensorFlow/Keras:
 - Early stopping and learning rate reduction on validation loss stagnation.
 
 #### Performance:
-- Plotted training/validation accuracy and loss curves.
+- Plotted training/validation accuracy and loss curves:
+
+   ![Training/Validation Accuracy and Loss Curves](img/dloutput.png)
+
 - Generated confusion matrix and classification report.
 - Delivered competitive results with strong accuracy and recall.
 
@@ -148,34 +152,51 @@ A neural network was implemented using TensorFlow/Keras:
 ## Usage
 ---
 ### Steps:
+
 1. **Clone the Repository**  
     ```bash
     $ git clone https://github.com/saghal/CIC-DDoS2019-ML-Detection.git
     $ cd CIC-DDoS2019-ML-Detection
     ```
-2. **Install Dependencies**  
-Ensure all required libraries are installed as specified in `requirements.txt`.  
+
+2. **Create and Activate Virtual Environment**  
+   - **Create a virtual environment**  
+     If you haven't already created a virtual environment, use the following command:
+     ```bash
+     $ python -m venv venv
+     ```
+
+   - **Activate the virtual environment**  
+     On **Windows**:
+     ```bash
+     $ venv\Scripts\activate
+     ```
+     On **macOS/Linux**:
+     ```bash
+     $ source venv/bin/activate
+     ```
+
+3. **Install Dependencies**  
+   Ensure all required libraries are installed as specified in `requirements.txt`.  
     ```bash
     $ pip install -r requirements.txt
     ```
-3. **Run the Pipeline**  
-- For Jupyter Notebooks:  
-  Open and run the notebook.  
-  ```  
-  jupyter notebook  
-  ```  
-- Or execute the script directly:  
-  ```  
-  python anomaly_detection.py  
-  ```  
+
+4. **Run the Pipeline**  
+   - For **Jupyter Notebooks**:  
+     Open and run the notebook `anomaly_detection.ipynb`.  
+     ```bash
+     $ jupyter notebook
+     ```  
+   - Or execute the script directly:  
+     ```bash
+     $ python anomaly_detection.py
+     ```
 
 ### Outputs:
 - EDA visualizations and reports.
 - Feature importance plots.
 - Model performance metrics and confusion matrices.
-
-
-
 
 
 
